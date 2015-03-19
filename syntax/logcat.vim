@@ -32,7 +32,7 @@ hi def kw_debug_color ctermfg=25
 hi def kw_verbose_color ctermfg=grey
 
 " Define regions
-syn region reg_date start="^" end="\]" fold transparent contains=log_date,log_hour,log_millisec,log_num keepend
+syn region reg_date start="^" end="$" fold transparent contains=log_date,log_hour,log_millisec,log_num keepend
 syn region reg_infos start="[F|E|W|I|D|V]/" end=":" fold transparent contains=log_processName,log_processNumber keepend
 
 " Define keywords
